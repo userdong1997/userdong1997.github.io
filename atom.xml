@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xdxdxd.cn/"/>
-  <updated>2019-10-30T07:47:52.236Z</updated>
+  <updated>2020-08-16T22:33:37.722Z</updated>
   <id>https://xdxdxd.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://xdxdxd.cn/2019/10/30/hello-world/"/>
-    <id>https://xdxdxd.cn/2019/10/30/hello-world/</id>
-    <published>2019-10-30T07:47:52.236Z</published>
-    <updated>2019-10-30T07:47:52.236Z</updated>
+    <title>Hello My First Blog</title>
+    <link href="https://xdxdxd.cn/2020/08/17/hello-my-first-blog/"/>
+    <id>https://xdxdxd.cn/2020/08/17/hello-my-first-blog/</id>
+    <published>2020-08-16T22:33:37.000Z</published>
+    <updated>2020-08-16T22:33:37.722Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,11 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
         
       
     
