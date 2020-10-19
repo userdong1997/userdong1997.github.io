@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="books, 王东-个人-笔记本">
-    <meta name="description" content="books | 东-游记">
+    <meta name="keywords" content="@NotNull 和 @Nullable, 王东-个人-笔记本">
+    <meta name="description" content="在写程序的时候你可以定义是否可为空指针。
+通过使用像@NotNull和@Nullable之类的annotation来声明一个方法是否是空指针安全的。
+现代的编译器、IDE或者工具可以读此annotation并帮你添加忘记的空指针检查，或者向">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>books | 东-游记</title>
+    <title>@NotNull 和 @Nullable | 东-游记</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,13 +318,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        books
+                        @NotNull 和 @Nullable
                     </div>
                 </div>
             </div>
@@ -446,7 +448,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-30
+                    2020-08-20
                 </div>
                 
 
@@ -455,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    322
                 </div>
                 
 
@@ -478,7 +480,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <p>在写程序的时候你可以定义是否可为空指针。</p>
+<p>通过使用像@NotNull和@Nullable之类的annotation来声明一个方法是否是空指针安全的。</p>
+<p>现代的编译器、IDE或者工具可以读此annotation并帮你添加忘记的空指针检查，或者向你提示出不必要的乱七八糟的空指针检查。</p>
+<p>IntelliJ和findbugs已经支持了这些annotation。这些annotation同样是JSR 305的一部分，但即便IDE或工具中没有，这个annotation本身可以作为文档。</p>
+<p>看到@NotNull和@Nullable，程序员自己可以决定是否做空指针检查。顺便说一句，这个技巧对Java程序员来说相对比较新，要采用需要一段时间。</p>
+<p>参考文档：<a href="https://blog.csdn.net/kuyuyingzi/article/details/16973429" target="_blank" rel="noopener">避免Java应用中NullPointerException的技巧和最佳实践</a></p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        String a <span class="token operator">=</span> null<span class="token punctuation">;</span>
+        <span class="token function">nullCheck</span><span class="token punctuation">(</span><span class="token string">"10"</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">nullCheck</span><span class="token punctuation">(</span>String id<span class="token punctuation">,</span> <span class="token annotation punctuation">@NonNull</span> String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>name <span class="token operator">==</span> null <span class="token operator">||</span> name<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>这个例子当中，标识了@NonNull，上面的a就会被提示，不过也仅仅是提示。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -521,7 +544,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xdxdxd.cn/books/index.html">https://xdxdxd.cn/books/index.html</a>
+                    <a href="https://xdxdxd.cn/2020/08/20/notnull-he-nullable/">https://xdxdxd.cn/2020/08/20/notnull-he-nullable/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -599,7 +622,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Wed Oct 30 2019 16:57:59 GMT+0800',
+    id: 'Thu Aug 20 2020 14:34:02 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -628,27 +651,24 @@ gitment.render('gitment-content');
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/books/index.html">
+                <a href="/2020/08/20/notnull-he-nullable/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="books">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="@NotNull 和 @Nullable">
                         
-                        <span class="card-title">books</span>
+                        <span class="card-title">@NotNull 和 @Nullable</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            文章摘要
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-20
                             </span>
                         <span class="publish-author">
                             
@@ -666,40 +686,48 @@ gitment.render('gitment-content');
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/books/index.html">
+                <a href="/2020/08/17/good-one/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="books">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="hexo-theme-matery 使用指南 -kongbu">
                         
-                        <span class="card-title">books</span>
+                        <span class="card-title">hexo-theme-matery 使用指南 -kongbu</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            nothing
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Dong
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/template-hexo-theme-matery/">
+                        <span class="chip bg-color">template, hexo-theme-matery</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

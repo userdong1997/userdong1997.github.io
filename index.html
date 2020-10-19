@@ -529,8 +529,8 @@ $(function () {
 $(function () {
     new APlayer({
         container: document.getElementById('aplayer'),
-        fixed: 'false' === 'true',
-        autoplay: 'false' === 'true',
+        fixed: 'true' === 'true',
+        autoplay: 'true' === 'true',
         theme: '#42b983',
         loop: 'all',
         order: 'list',
@@ -549,7 +549,7 @@ $(function () {
 <div class="video-player">
     
     <div class="title center-align">
-        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;ABC
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;俺也一样
     </div>
     
     <div class="row">
@@ -572,7 +572,7 @@ $(function () {
             preload: 'auto',
             volume: Number('0.7'),
             video: {
-                url: 'https://www.bilibili.com/video/BV1ci4y1g7sL/',
+                url: '/medias/video/metoo.mp4',
                 pic: '',
                 thumbnails: ''
             }
@@ -601,6 +601,88 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2020/08/20/notnull-he-nullable/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="@NotNull 和 @Nullable">
+                            
+                            <span class="card-title">@NotNull 和 @Nullable</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                文章摘要
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Dong
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/08/17/good-one/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="hexo-theme-matery 使用指南 -kongbu">
+                            
+                            <span class="card-title">hexo-theme-matery 使用指南 -kongbu</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                nothing
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-17
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/template-hexo-theme-matery/">
+                            <span class="chip bg-color">template, hexo-theme-matery</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2020/08/17/hello-my-first-blog/">
                         <div class="card-image">
                             
@@ -615,6 +697,9 @@ $(function () {
                         <div class="summary block-with-text">
                             
                                 
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return
                             
                         </div>
                         <div class="publish-info">
