@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xdxdxd.cn/"/>
-  <updated>2020-08-20T06:50:26.086Z</updated>
+  <updated>2020-10-19T11:36:20.509Z</updated>
   <id>https://xdxdxd.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>@NotNull 和 @Nullable</title>
-    <link href="https://xdxdxd.cn/2020/08/20/notnull-he-nullable/"/>
-    <id>https://xdxdxd.cn/2020/08/20/notnull-he-nullable/</id>
-    <published>2020-08-20T06:34:02.000Z</published>
-    <updated>2020-08-20T06:50:26.086Z</updated>
+    <title>Hexo常用命令</title>
+    <link href="https://xdxdxd.cn/2020/10/19/hexo-chang-yong-ming-ling/"/>
+    <id>https://xdxdxd.cn/2020/10/19/hexo-chang-yong-ming-ling/</id>
+    <published>2020-10-19T11:32:57.000Z</published>
+    <updated>2020-10-19T11:36:20.509Z</updated>
     
     <summary type="html">
     
@@ -29,37 +29,7 @@
       
         
         
-          &lt;p&gt;在写程序的时候你可以定义是否可为空指针。&lt;/p&gt;
-&lt;p&gt;通过使用像@NotNull和@Nullable之类的annotation来声明一个方法是否是空指针安全的。&lt;/p&gt;
-&lt;p&gt;现代的编译器、IDE或者工具可以读此annotation并帮你添加忘记的空指针检查，或者向你提示
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo-theme-matery 使用指南 -kongbu</title>
-    <link href="https://xdxdxd.cn/2020/08/17/good-one/"/>
-    <id>https://xdxdxd.cn/2020/08/17/good-one/</id>
-    <published>2020-08-16T23:20:29.000Z</published>
-    <updated>2020-08-17T01:50:09.425Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;类别和标签都是根据文章上的自动生成。&lt;/li&gt;
-&lt;/ol&gt;
-
- &lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;
- &lt;iframe
+          &lt;h3 id=&quot;1、hexo-init&quot;&gt;&lt;a href=&quot;#1、hexo-init&quot; class=&quot;headerlink&quot; title=&quot;1、hexo init&quot;&gt;&lt;/a&gt;1、hexo init&lt;/h3&gt;&lt;p&gt;&lt;code&gt;hexo init&lt;/code&gt;
         
       
     
@@ -69,34 +39,7 @@
       <category term="Hexo" scheme="https://xdxdxd.cn/categories/Hexo/"/>
     
     
-      <category term="template, hexo-theme-matery" scheme="https://xdxdxd.cn/tags/template-hexo-theme-matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello My First Blog</title>
-    <link href="https://xdxdxd.cn/2020/08/17/hello-my-first-blog/"/>
-    <id>https://xdxdxd.cn/2020/08/17/hello-my-first-blog/</id>
-    <published>2020-08-16T22:33:37.000Z</published>
-    <updated>2020-08-16T22:33:37.722Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
-        
-      
-    
-    </summary>
-    
-    
+      <category term="命令" scheme="https://xdxdxd.cn/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
